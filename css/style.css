@@ -306,7 +306,7 @@ hamburger fullscreen menu START
 
 .outer-menu .menu div div ul li.active a {
 	color: #e5e5e5;
-	border-bottom: 3px white solid;
+	/*border-bottom: 3px white solid;*/
 	font-weight: bold;
 }
 
