@@ -17,7 +17,7 @@
 
 h1, h2, h3, h4 { font-family: "EB Garamond",Georgia; width: auto; }
 
-html {  scroll-behavior: smooth; }
+html { scroll-behavior: smooth; }
 
 body { background-color: #eaf2f5; font-family: "EB Garamond", Georgia, Tahoma, Arial, sans-serif; -webkit-animation: bugfix infinite 1s; }
 
@@ -31,6 +31,7 @@ body { background-color: #eaf2f5; font-family: "EB Garamond", Georgia, Tahoma, A
 -webkit-box-shadow: 0 1px 2px 1px rgba(0,0,0,0.75) inset;
 box-shadow: 0 1px 2px 1px rgba(0,0,0,0.75) inset;	
 }
+
 .bg-img {
 	background: url("../img/bg_new_smaller.jpg") no-repeat bottom center;
 	width: 100%;
@@ -58,10 +59,6 @@ box-shadow: 0 1px 2px 1px rgba(0,0,0,0.75) inset;
 
 header, .home-text { width: 100%; float: left; }
 
-/* /////////////////////////////////////////////////////////////////////////////////
-hamburger fullscreen menu START
-/////////////////////////////////////////////////////////////////////////////// */
-
 .flex-center {
   display: -webkit-box;
   display: -webkit-flex;
@@ -77,13 +74,11 @@ hamburger fullscreen menu START
           justify-content: center;
 }
 
-
 .outer-menu {
     float: right;
     position: relative;
     z-index: 1000;
 }
-
 .outer-menu .checkbox-toggle {
   position: absolute;
   top: 0;
@@ -315,11 +310,6 @@ hamburger fullscreen menu START
 	font-weight: bold;
 }
 
-
-/* /////////////////////////////////////////////////////////////////////////////////
-hamburger fullscreen menu END
-/////////////////////////////////////////////////////////////////////////////// */
-
 .home-page {
 	background-color: rgba(0, 0, 0, 0.4);	
 }
@@ -354,25 +344,23 @@ p { font-size: 1.3rem; }
 
 /* Small only START */
 @media screen and (max-width: 39.9375em) {
+    .outer-menu .menu div div ul li {
+        margin: 0.5em 1em;
+    }
 
-.outer-menu .menu div div ul li {
-    margin: 0.5em 1em;
-}
+    .home-tile {
+        font-size: 3rem;
+    }
 
-.home-tile {
-	font-size: 3rem;
-}
+    .home-text {
+        float: left;
+        position: relative;
+        top: 10%;
+        width: 100%;
+    }
 
-.home-text {
-    float: left;
-    position: relative;
-    top: 10%;
-    width: 100%;
-}
+    footer p { opacity: 0.50; }
 
-footer p { opacity: 0.50; }
-
-	
 }/* Small only END */
       
 /* Medium and up START */
@@ -382,39 +370,37 @@ footer p { opacity: 0.50; }
 
 /* Medium only START */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-.home-text h1 {	font-size: 2rem !important;}	
-footer p { opacity: 0.50; }
+    .home-text h1 {	font-size: 2rem !important;}	
+    footer p { opacity: 0.50; }
 }/* Medium only END */
 /* Large and up START */
 @media screen and (min-width: 64em) {
+    .home-text {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%); 
+        -webkit-transform: translate(-50%, -50%); 
+        width: 100%;
+    }	
+    footer {
+        background-color: rgba(0, 0, 0, 0.85);
+        border-top: 2px solid white;
+        opacity: 0.85;
+        bottom: 0;
+        color: white;
+        float: left;
+        height: 80px;
+        top: 100%;
+        width: 100%;
+        position: absolute;
+    }
 
-.home-text {
-	position: absolute;
-	left: 50%;
-	top: 40%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%); 
-	-webkit-transform: translate(-50%, -50%); 
-	width: 100%;
-}	
-footer {
-	background-color: rgba(0, 0, 0, 0.85);
-	border-top: 2px solid white;
-	opacity: 0.85;
-    bottom: 0;
-    color: white;
-    float: left;
-    height: 80px;
-    top: 100%;
-    width: 100%;
-	position: absolute;
-}
-
-footer p {
-	margin-top: 1rem;
-}
+    footer p {
+        margin-top: 1rem;
+    }
 }/* Large and up END */
-
     
 /* Large only START */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
