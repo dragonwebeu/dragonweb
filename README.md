@@ -1,5 +1,8 @@
 # dragonweb
 
-Update: 19/02/2017
+You can use this template for non commerical use only!
 
-DragonWeb is Henry Mäestu static webpage.
+https://creativecommons.org/licenses/by-nc/4.0/
+
+www.dragonweb.eu 
+
