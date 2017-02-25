@@ -4,7 +4,7 @@ $(window).on('load' ,function(){
     $('.modal').remove();    
     console.log("1");
     $(".content-top.animated").addClass("fadeIn");
-    $(".web-design img").addClass("slideInUp");
+    $(".web-design img.animated").addClass("slideInUp");
     console.log("2");
 });
 
