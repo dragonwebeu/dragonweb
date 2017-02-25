@@ -477,7 +477,7 @@ p { font-size: 1.3rem; }
     height: 100%;
     position: fixed;
     z-index: 1000;
-    background: #fff;
+    background: #E0F1FF;
 }
 
 .modal .center {
