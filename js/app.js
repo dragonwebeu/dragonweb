@@ -3,5 +3,5 @@ $(document).ready(function() {
        ga('send', 'event', 'menu-links', 'Click', $(this).attr("href")); 
     });
     
-     $('#loading_wrap').remove();
+     $('.uil-ring-css').remove();
 });
