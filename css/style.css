@@ -480,6 +480,15 @@ p { font-size: 1.3rem; }
     background: #fff;
 }
 
+.modal .center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 50%;  
+    text-align: center;  
+}
 @-webkit-keyframes uil-ring-anim {
   0% {
     -ms-transform: rotate(0deg);
