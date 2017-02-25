@@ -1,5 +1,5 @@
 
-$('img').on('load' ,function(){
+$(window).on('load' ,function(){
     console.log(this);
     $('.uil-ring-css').remove();
 });
