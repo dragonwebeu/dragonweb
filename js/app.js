@@ -1,7 +1,7 @@
 
 $(window).on('load' ,function(){
     console.log(this);
-    $('.uil-ring-css').remove();
+    $('.modal').remove();    
 });
 
 $(document).ready(function() {
