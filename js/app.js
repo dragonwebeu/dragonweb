@@ -2,7 +2,9 @@
 $(window).on('load' ,function(){
     console.log(this);
     $('.modal').remove();    
-    $(".content-top.animated").delay(800).addClass("fadeIn");
+    console.log("1");
+    $(".content-top.animated").delay(1200).addClass("fadeIn");
+    console.log("2");
 });
 
 $(document).ready(function() {
