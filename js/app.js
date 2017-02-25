@@ -2,6 +2,8 @@ $(document).ready(function() {
     $(".menu a").click(function() {
        ga('send', 'event', 'menu-links', 'Click', $(this).attr("href")); 
     });
-    
-     $('.uil-ring-css').remove();
+    $(window).load(function() {
+        $('.uil-ring-css').remove();
+    });
 });
+
