@@ -3,7 +3,7 @@ $(window).on('load' ,function(){
     $('.modal').remove();    
     $(".content-top.animated").addClass("fadeIn");
     $(".web-design img.animated").addClass("slideInUp");
-    $(window).on('scroll touchmove mousewheel', function(e){
+    $(document).on('scroll touchmove mousewheel', function(e){
         e.preventDefault();
         e.stopPropagation();
         return false;
