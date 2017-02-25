@@ -4,7 +4,7 @@ $(document).ready(function() {
     });    
 });
 
-$(window).load(function() {
+$("img").load(function() {    
     $('.uil-ring-css').remove();
 });
 
