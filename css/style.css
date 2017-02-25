@@ -472,7 +472,14 @@ p { font-size: 1.3rem; }
     margin: 0.67em 0;
 }
 
-width: 100%;
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    background: #fff;
+}
+
 @-webkit-keyframes uil-ring-anim {
   0% {
     -ms-transform: rotate(0deg);
@@ -622,7 +629,6 @@ width: 100%;
   -o-animation: uil-ring-anim 1s linear infinite;
   animation: uil-ring-anim 1s linear infinite;
 }
- 
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {}
