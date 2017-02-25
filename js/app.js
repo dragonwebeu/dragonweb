@@ -2,7 +2,7 @@
 $(window).on('load' ,function(){
     console.log(this);
     $('.modal').fadeOut();    
-    $(".content-top .animated").addClass("fadeIn");
+    $(".content-top.animated").addClass("fadeIn");
 });
 
 $(document).ready(function() {
