@@ -3,7 +3,8 @@ $(window).on('load' ,function(){
     console.log(this);
     $('.modal').remove();    
     console.log("1");
-    $(".content-top.animated").delay(1200).addClass("fadeIn");
+    $(".content-top.animated").addClass("fadeIn");
+    $(".web-design").addClass("slideInUp");
     console.log("2");
 });
 
