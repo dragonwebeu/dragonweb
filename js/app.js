@@ -1,5 +1,5 @@
 
-$(window).on('load' ,function(){    
+$(window).on('load' ,function(e){    
     $('.modal').remove();    
     $(".content-top.animated").addClass("fadeIn");
     $(".web-design img.animated").addClass("slideInUp");
