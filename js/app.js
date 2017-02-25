@@ -1,7 +1,8 @@
 
 $(window).on('load' ,function(){
     console.log(this);
-    $('.modal').fadeOut();    
+    $('.modal').fadeOut().remove();    
+    $(".content-top .animated").addClass("fadeIn");
 });
 
 $(document).ready(function() {

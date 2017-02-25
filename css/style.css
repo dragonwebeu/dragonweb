@@ -618,8 +618,7 @@ p { font-size: 1.3rem; }
   }
 }
 .uil-ring-css {
-  background: none;
-  position: relative;
+  background: none;  
   width: 200px;
   height: 200px;
 }
@@ -629,7 +628,7 @@ p { font-size: 1.3rem; }
   width: 160px;
   height: 160px;
   top: 20px;
-  left: 20px;
+  left: 70px;
   border-radius: 80px;
   box-shadow: 0 6px 0 0 #59ebff;
   -ms-animation: uil-ring-anim 1s linear infinite;
