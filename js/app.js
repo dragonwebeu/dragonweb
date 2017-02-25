@@ -1,7 +1,7 @@
 
 $(window).on('load' ,function(){
     console.log(this);
-    $('.modal').remove();    
+    $('.modal').fadeOut();    
 });
 
 $(document).ready(function() {
