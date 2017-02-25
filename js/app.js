@@ -3,7 +3,7 @@ $(window).on('load' ,function(e){
     $('.modal').remove();    
     $(".content-top.animated").addClass("fadeIn");
     $(".web-design img.animated").addClass("slideInUp");    
-    $("body").on("scroll", function(e){
+    $(document).on("scroll", function(e){
         console.log(this);
         e.preventDefault();
     });
