@@ -2,13 +2,7 @@
 $(window).on('load' ,function(){    
     $('.modal').remove();    
     $(".content-top.animated").addClass("fadeIn");
-    $(".web-design img.animated").addClass("slideInUp");
-    $(this).on('scroll touchmove mousewheel', function(e){
-        console.log(this);
-        e.preventDefault();
-        e.stopPropagation();
-        return false;
-    });
+    $(".web-design img.animated").addClass("slideInUp");    
 });
 
 $(document).ready(function() {
