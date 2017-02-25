@@ -2,7 +2,7 @@
 $(window).on('load' ,function(){
     console.log(this);
     $('.modal').remove();    
-    $(".content-top.animated").addClass("fadeIn");
+    $(".content-top.animated").addClass("fadeIn").delay(400);
 });
 
 $(document).ready(function() {
