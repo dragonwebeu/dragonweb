@@ -3,10 +3,13 @@ $(window).on('load' ,function(e){
     $('.modal').remove();    
     $(".content-top.animated").addClass("fadeIn");
     $(".web-design img.animated").addClass("slideInUp");    
-    $(document).on("scroll", function(e){
-        console.log(this);
-        e.preventDefault();
-    });
+$(".modal").on( 'mousewheel DOMMouseScroll', function ( e ) {
+    var e0 = e.originalEvent,
+        delta = e0.wheelDelta || -e0.detail;
+
+    this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+    e.preventDefault();
+});
 });
 
 $(document).ready(function() {
