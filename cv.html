@@ -1,0 +1,98 @@
+﻿<!-- CV viimati uuendatud 01.04.2015
+To do:
+1. Get browser lang ja selle j2rgi kuvada cv eesti v6i inglis keeles. 
+2. Pilt teha endast.
+ -->
+<!doctype html>
+<html lang="et">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Henry Mäestu responsive Curriculum Vitae</title>
+    <meta name="robots" content="noindex, nofollow">
+	<style>
+	*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body,html{font-size:100%;height:100%}body{background:#fff;color:#222;padding:0;margin:0;font-family:"Helvetica Neue",Helvetica,Helvetica,Arial,sans-serif;font-weight:400;font-style:normal;font-size:1.8em;line-height:150%;position:relative;cursor:default}article,aside,footer,header,main,section,summary{display:block}a{color:#39f;text-decoration:none}a:hover{cursor:pointer}a:active,a:hover{outline:0}h1{text-align:right;width:95%;color:#696969;font-size:2em;margin:.67em 0}.name{margin:0}h3{margin:0;text-transform:uppercase;padding-left:.9375em;padding-right:.9375em}b,strong{font-weight:700}dfn{font-style:italic}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;border:1px solid #dcdcdc}img{max-width:100%;height:auto;border:0;-ms-interpolation-mode:bicubic;display:inline-block;vertical-align:middle}.left{float:left!important}.right{float:right!important}.hide{display:none}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.row{width:100%;margin:0 auto 2em;max-width:90%}.row:after,.row:before{content:" ";display:table}.row:after{clear:both}.row .row{width:auto;margin:0 -.9375em;max-width:none}.row .row:after,.row .row:before{content:" ";display:table}.row .row:after{clear:both}.column,.columns{padding-left:.9375em;padding-right:.9375em;width:100%;float:left}[class*=column]+[class*=column]:last-child{float:right}[class*=column]+[class*=column].end{float:left}.hr-large{left:0;position:absolute;width:90%}.hr-normal{left:0;position:absolute;width:75%}.year{font-weight:bolder;margin-right:2em}.ty{margin-right:.5em}@-webkit-keyframes fadeIn{from{opacity:0}to{opacity:1}}@-moz-keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.fade-in{opacity:0;-webkit-animation:fadeIn ease-in 1;-moz-animation:fadeIn ease-in 1;animation:fadeIn ease-in 1;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-duration:1s;-moz-animation-duration:1s;animation-duration:1s}.fade-in.one{-webkit-animation-delay:.7s;-moz-animation-delay:.7s;animation-delay:.7s}.fade-in.two{-webkit-animation-delay:1.2s;-moz-animation-delay:1.2s;animation-delay:1.2s}.fade-in.three{-webkit-animation-delay:1.6s;-moz-animation-delay:1.6s;animation-delay:1.6s}.progress{background-color:#f6f6f6;border:1px solid #fff;height:1.38889rem;margin-bottom:.55556rem;padding:.11111rem}.progress .meter{background:#008cba;display:block;height:100%}@media only screen and (max-width:640px){h1{text-align:center}}@media only screen and (min-width:64.063em){.column,.columns{position:relative;padding-left:.9375em;padding-right:.9375em;float:left}.large-1{width:8.33333%}.large-2{width:16.66667%}.large-3{width:25%}.large-4{width:33.33333%}.large-5{width:41.66667%}.large-12{width:100%}}@media print{body{font-size:.8em}}
+	</style>
+<!--[if IE]><style type="text/css">.fade-in, .row.fade-in.two, .row.fade-in.three { opacity:1 !important; }</style><!--<![endif]-->	
+<script type="text/javascript">function calcAge(){birthDay=30;birthMonth=11;birthYear=1989;todayDate=new Date;todayYear=todayDate.getFullYear();todayMonth=todayDate.getMonth();todayDay=todayDate.getDate();age=todayYear-birthYear;if(todayMonth<birthMonth-1){age--}if(birthMonth-1==todayMonth&&todayDay<birthDay){age--}return age}</script>
+</head>
+<body>
+	<section class="row fade-in" itemscope itemtype="http://data-vocabulary.org/Person">
+		<h1 class="fade-in">Curriculum Vitae</h1>
+		<div class="fade-in one">
+			<h2 itemprop="name" class="name">Henry Mäestu</h2>
+			<hr class="hr-large" />
+			<div class="large-12 columns">
+				<!-- Pilt lisada kunagi <img class="right photo" itemprop="photo" src="http://www.dragonweb.eu/henry/img/photo.jpg" alt="ME" title="ME"> -->
+				<p>Sünniaeg: 30.11.1989 (Vanus: <script>document.write(calcAge());</script>), Põlva <p> 
+				<p itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">Aadress: <span itemprop="country-name">Eesti,</span> <span itemprop="region">Tartu,</span> Karlova linnaosa<p>
+				<p>Telefon: +372 56 963 898<p>
+				<p>Email: <a class="email" href="mailto:henry.maestu@gmail.com">henry.maestu@gmail.com</a><p>
+				<p>Veebileht: <a target="_blank" href="http://www.dragonweb.eu" itemprop="url">www.dragonweb.eu</a><p>
+				<p>Perekonnaseis: Vallaline<p>	
+		  </div>
+		</div>
+    </section>	
+	<section class="row fade-in two">
+		<h3>Hariduskäik</h3>
+		<hr class="hr-normal" />
+		<div class="large-12 columns">
+			<p><span class="year">2007 – 2011</span> Tartu Kutsehariduskeskus, andmetöötlus ja veebidisain.<p>	
+			<p><span class="year">1997 – 2007</span> Tartu Decsartesi Lütseum (omandatud põhiharidus).<p>	
+		</div>
+    </section>
+	<section class="row fade-in three">
+		<h3>Täiendkoolitus</h3>
+		<hr class="hr-normal" />
+		<div class="large-12 columns">
+			<p><span class="year">05.2012</span> Tallina Arvutikool, php jätkukoolitus veebirakenduste loomiseks, 24 akadeemilist tundi<p>	
+			<p><span class="year">04.2012</span> Tallina Arvutikool, php stardikooltus veebirakenduste loomiseks, 20 akadeemilist tundi<p>	
+		</div>
+    </section>
+	<section class="row fade-in three">
+		<h3>Töökogemus</h3>
+		<hr class="hr-normal" />
+		<div class="large-12 columns">
+			<p><span class="year">07.2016 - 05.2017 </span> OÜ Iceleaf OÜ - tarkvaraarendaja/font-end developer <br /><span class="ty">Tööülesanded:</span> Front-end arendust, ASP.net(bug fixes), Azure deployment (testingu ja productioni uuendamine).<p>
+			<p><span class="year">11.2013 - 07.2016 </span> OÜ E-Farmer - laotööline <br /><span class="ty">Tööülesanded:</span> Laaduritega kauba maha laadimine/peale laadmine, BB pakendamine.<p>
+			<p><span class="year">11.2012 - ... </span> DragonWeb - vabakutselise <i>front-end developer</i> <br /><span class="ty">Tööülesanded:</span>  Valmis teemade tegemine sisuhaldusüsteemile CMSMS.<p>
+			<p><span class="year">06-11.2012 </span> Entigrena OÜ - vuugispetsialist <br /><span class="ty">Tööülesanded:</span> Vuukide hermetiseerimine ja täitmine, teemantpuurimine.<p>
+			<p><span class="year">10-12.2010 </span> Ettevõttepraktika, Quretec OÜ, maht 400 akadeemilist tundi <br /><span class="ty">Tööülesanded:</span> veebilehtede loomine ja erinevate toodete lehtede kujundamine.<p>
+			<p><span class="year">01-03.2010 </span> Ettevõttepraktika, Tartu Kutsehariduskeskus, maht 400 akadeemilist tundi <br /><span class="ty">Tööülesanded:</span> veebilehe viimine sisuhaldussüsteemi, BilVoc kodulehe kujundamine.<p>
+			<p><span class="year">09-10.2008 </span> Ettevõttepraktika, Tartu Ülikooli multimeedia talitus, maht 200 akadeemilist tundi <br /><span class="ty">Tööülesanded:</span> plakatide, voldikute kujundamine ja lahti lõikamine.<p>
+		</div>
+    </section>
+	<section class="row fade-in three">
+		<h3>Arvutioskused</h3>
+		<hr class="hr-normal" />
+		<div class="large-12 columns">			
+			<p><div class="progress large-5"><span class="meter"></span></div>Adobe Illustrator, InDesign, Photoshop, HTML5/CSS3, CMS MS, Bootstrap/Foundation 6 (preferred)<p>
+			<p><div class="progress large-5"><span class="meter" style="width: 70%;"></span></div>Sony Vegas Pro/ HitFilms 4 Express, OpenCart, Linux, {smarty}, Visual Studio, JavaScript/jQuery, git,<p>
+			<p><div class="progress large-5"><span class="meter" style="width: 10%;"></span></div>PHP/Laravel, Blender, Node.js<p>
+			</div>
+    </section>
+	<section class="row fade-in three"> 
+		<h3>Keeled</h3>
+		<hr class="hr-normal" />
+		<div class="large-12 columns">
+			<p>Eesti keel: emakeel<p>
+			<p>Inglise keel: keskmine<p>
+			<p>Saksa keel: vähene<p>
+		</div>
+    </section>
+	<section class="row fade-in three">
+		<h3>Huvialad</h3>
+		<hr class="hr-normal" />
+		<div class="large-12 columns">
+			<p>Macro fotograafia, reisimine, jalgrattamatkad, ruubiku kuubik, elektroonika(<i>how stuff works</i>), astronoomia, websites penetration testing.<p>
+		</div>
+    </section>
+	<!-- <section class="row fade-in three"> -->
+		<!-- <h3>Minust/Isikuomadused</h3> -->
+		<!-- <hr class="hr-normal" /> -->
+		<!-- <div class="large-12 columns"> -->
+			<!-- <p>.<p> -->
+		<!-- </div> -->
+    <!-- </section> -->
+</body>
+</html>
