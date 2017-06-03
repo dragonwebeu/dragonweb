@@ -148,8 +148,9 @@ div.page-border {
 
 div.border-shadow {
   .border-top, .border-bottom, .border-left, .border-right {        
-    float: left;
+    float: left;    
     position: fixed;        
+    z-index: 10;
     background-color: #fff; }      
 
     .border-top {
@@ -204,21 +205,43 @@ div.border-shadow {
 }
 
 .uil-ring-css {
+  text-align: center;
   background: none;  
   width: 200px;
   height: 200px;
+  div {  
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 160px;
+    top: 20px;
+    left: 70px;
+    border-radius: 80px;
+    box-shadow: 0 6px 0 0 #59ebff;
+    @include animation('uil-ring-anim 1s linear infinite');    
+  }
 }
-.uil-ring-css > div {
-  position: absolute;
-  display: block;
-  width: 160px;
-  height: 160px;
-  top: 20px;
-  left: 70px;
-  border-radius: 80px;
-  box-shadow: 0 6px 0 0 #59ebff;
-  @include animation('uil-ring-anim 1s linear infinite');    
+
+@include media-queries(small-only) {
+  .uil-ring-css {
+    div {
+      left: 5%;
+    }
+  }
+
+  // footer {
+  //   display: none;
+  // }  
+
+  .page-header.page-header-text-home {
+    height: auto;    
+  }
+
+  .page-header-text, .page-header-text-home {
+    margin: 3.65em 0 0;
+  }
 }
+
 
 @include keyframes(ZoominOut) {
   0% { transform: scale(1.15) rotate(0.1deg);}
@@ -446,7 +469,7 @@ header {
   }
 }
 
-.footer-absulote {
+.footer-absolute {
     bottom: 0;
     top: 100%;
     color: white;
@@ -455,6 +478,22 @@ header {
     width: 100%;
 	  z-index: -1;
 }
+
+footer {
+      background-color: rgba(0, 0, 0, 0.85);
+      border-top: 2px solid white;
+      opacity: 0.85;           
+      color: white;
+      float: left;
+      height: 80px;      
+      width: 100%;
+      position: relative;
+      bottom: -8px;
+  }
+  
+  footer p {
+      margin-top: 1rem;
+  }
 
 p { font-size: 1.3rem; }
 
@@ -473,7 +512,7 @@ p { font-size: 1.3rem; }
       font-size: 2rem !important; 
     }	
   }
-  footer p { opacity: 0.50; }
+  // footer p { opacity: 0.50; }
 }
 
 @include media-queries(large-up) {
@@ -487,23 +526,7 @@ p { font-size: 1.3rem; }
       -ms-transform: translate(-50%, -50%); 
       -webkit-transform: translate(-50%, -50%); 
       width: 100%;
-  }	
-
-  footer {
-      background-color: rgba(0, 0, 0, 0.85);
-      border-top: 2px solid white;
-      opacity: 0.85;           
-      color: white;
-      float: left;
-      height: 80px;      
-      width: 100%;
-      position: relative;
-      bottom: -8px;
-  }
-
-  footer p {
-      margin-top: 1rem;
-  }
+  }	  
 }
 
 /// PAGE GALLARY
@@ -654,7 +677,8 @@ html, body {
 }
   .content-container.blog{
     top: auto;
-    position: unset;
+    position: relative;
+    z-index: 3;
     background-color: #eaf2f5; 
     float: left;
     width: 100%;

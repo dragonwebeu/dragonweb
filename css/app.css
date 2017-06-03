@@ -52,6 +52,7 @@ div.page-border .border-right {
 div.border-shadow .border-top, div.border-shadow .border-bottom, div.border-shadow .border-left, div.border-shadow .border-right {
   float: left;
   position: fixed;
+  z-index: 10;
   background-color: #fff;
 }
 
@@ -150,12 +151,13 @@ div.border-shadow .border-right {
 }
 
 .uil-ring-css {
+  text-align: center;
   background: none;
   width: 200px;
   height: 200px;
 }
 
-.uil-ring-css > div {
+.uil-ring-css div {
   position: absolute;
   display: block;
   width: 160px;
@@ -168,6 +170,18 @@ div.border-shadow .border-right {
   -moz-animation: uil-ring-anim 1s linear infinite;
   -ms-animation: uil-ring-anim 1s linear infinite;
   animation: uil-ring-anim 1s linear infinite;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .uil-ring-css div {
+    left: 5%;
+  }
+  .page-header.page-header-text-home {
+    height: auto;
+  }
+  .page-header-text, .page-header-text-home {
+    margin: 3.65em 0 0;
+  }
 }
 
 @-webkit-keyframes ZoominOut {
@@ -539,7 +553,7 @@ header {
   margin: 0.65em 0;
 }
 
-.footer-absulote {
+.footer-absolute {
   bottom: 0;
   top: 100%;
   color: white;
@@ -547,6 +561,22 @@ header {
   position: absolute !important;
   width: 100%;
   z-index: -1;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.85);
+  border-top: 2px solid white;
+  opacity: 0.85;
+  color: white;
+  float: left;
+  height: 80px;
+  width: 100%;
+  position: relative;
+  bottom: -8px;
+}
+
+footer p {
+  margin-top: 1rem;
 }
 
 p {
@@ -567,9 +597,6 @@ p {
   .page-header.page-header-text-home h1 {
     font-size: 2rem !important;
   }
-  footer p {
-    opacity: 0.50;
-  }
 }
 
 @media screen and (min-width: 64em) {
@@ -583,20 +610,6 @@ p {
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     width: 100%;
-  }
-  footer {
-    background-color: rgba(0, 0, 0, 0.85);
-    border-top: 2px solid white;
-    opacity: 0.85;
-    color: white;
-    float: left;
-    height: 80px;
-    width: 100%;
-    position: relative;
-    bottom: -8px;
-  }
-  footer p {
-    margin-top: 1rem;
   }
 }
 
@@ -764,7 +777,8 @@ html, body {
 
 .content-container.blog {
   top: auto;
-  position: unset;
+  position: relative;
+  z-index: 3;
   background-color: #eaf2f5;
   float: left;
   width: 100%;

@@ -6,9 +6,9 @@ var vm = new Vue({
     articles: [
         
             {
-            "title"    : "DragonWeb with new design is almost ready",      
-            "url"      : "/news/2017/05/25/dragonweb-update.html",
-            "content"  : "I’m happy to tell anyone that new site is ALMOST ready. Will update this soon…"
+            "title"    : "DragonWeb new site with no CMS. What madness is this?",      
+            "url"      : "/news/2017/05/30/dragonweb-update.html",
+            "content"  : "New site with no CMS, what madness is this?!Simple answer is Jekyll"
             } 
                 
     ],        
