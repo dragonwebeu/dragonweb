@@ -453,10 +453,9 @@ header {
     .main-title {
       border-bottom: 3px solid white;
       font-weight: normal;
-      width: 100%;	      
-      font-size: 2.5rem;
-      @include media-queries(large-up) {
-        font-size: 3rem;
+      width: 100%;	            
+      @include media-queries(medium-only) {
+        font-size: 2.5rem;
       }
     }  
     
