@@ -536,7 +536,7 @@ header {
   font-size: 2.5rem;
 }
 
-@media screen and (max-width: 39.9375em) {
+@media screen and (min-width: 64em) {
   .page-header-text .main-title, .page-header-text-home .main-title {
     font-size: 3rem;
   }
