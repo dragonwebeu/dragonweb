@@ -533,6 +533,13 @@ header {
   border-bottom: 3px solid white;
   font-weight: normal;
   width: 100%;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .page-header-text .main-title, .page-header-text-home .main-title {
+    font-size: 3rem;
+  }
 }
 
 .page-header-text h1, .page-header-text p, .page-header-text-home h1, .page-header-text-home p {

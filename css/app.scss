@@ -453,7 +453,11 @@ header {
     .main-title {
       border-bottom: 3px solid white;
       font-weight: normal;
-      width: 100%;	
+      width: 100%;	      
+      font-size: 2.5rem;
+      @include media-queries(small-only) {
+        font-size: 3rem;
+      }
     }  
     
     h1, p {
