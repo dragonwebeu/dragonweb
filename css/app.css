@@ -16,86 +16,79 @@ body {
   font-family: "EB Garamond", Georgia, Tahoma, Arial, sans-serif !important;
 }
 
-div.page-border .border-top, div.page-border .border-bottom, div.page-border .border-left, div.page-border .border-right {
-  float: left;
-  position: fixed;
-  z-index: 2000;
-  background-color: #fff;
-}
-
-div.page-border .border-top {
-  top: 0;
-  width: 100%;
-  height: 8px;
-}
-
-div.page-border .border-bottom {
-  bottom: 0;
-  width: 100%;
-  height: 8px;
-}
-
-div.page-border .border-left {
-  top: 0;
-  left: 0;
-  width: 8px;
-  height: 100%;
-}
-
-div.page-border .border-right {
-  top: 0;
-  right: 0;
-  width: 8px;
-  height: 100%;
-}
-
-div.border-shadow .border-top, div.border-shadow .border-bottom, div.border-shadow .border-left, div.border-shadow .border-right {
-  float: left;
-  position: fixed;
-  z-index: 10;
-  background-color: #fff;
-}
-
-div.border-shadow .border-top {
-  top: 0;
-  width: 100%;
-  height: 8px;
-  -webkit-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
-  -ms-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
-  box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
-}
-
-div.border-shadow .border-bottom {
-  bottom: 0;
-  width: 100%;
-  height: 8px;
-  -webkit-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
-  -ms-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
-  box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
-}
-
-div.border-shadow .border-left {
-  top: 0;
-  left: 0;
-  width: 8px;
-  height: 100%;
-  -webkit-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
-  -ms-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
-  box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
-}
-
-div.border-shadow .border-right {
-  top: 0;
-  right: 0;
-  width: 8px;
-  height: 100%;
-  -webkit-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
-  -ms-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
-  box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
+@media screen and (min-width: 64em) {
+  div.page-border .border-top, div.page-border .border-bottom, div.page-border .border-left, div.page-border .border-right {
+    float: left;
+    position: fixed;
+    z-index: 2000;
+    background-color: #fff;
+  }
+  div.page-border .border-top {
+    top: 0;
+    width: 100%;
+    height: 8px;
+  }
+  div.page-border .border-bottom {
+    bottom: 0;
+    width: 100%;
+    height: 8px;
+  }
+  div.page-border .border-left {
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+  }
+  div.page-border .border-right {
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 100%;
+  }
+  div.border-shadow .border-top, div.border-shadow .border-bottom, div.border-shadow .border-left, div.border-shadow .border-right {
+    float: left;
+    position: fixed;
+    z-index: 10;
+    background-color: #fff;
+  }
+  div.border-shadow .border-top {
+    top: 0;
+    width: 100%;
+    height: 8px;
+    -webkit-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
+    -ms-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
+  }
+  div.border-shadow .border-bottom {
+    bottom: 0;
+    width: 100%;
+    height: 8px;
+    -webkit-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
+    -ms-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
+  }
+  div.border-shadow .border-left {
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    -webkit-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
+    -ms-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
+  }
+  div.border-shadow .border-right {
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 100%;
+    -webkit-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
+    -ms-box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.75);
+  }
 }
 
 .modal {
@@ -628,13 +621,18 @@ p {
 }
 
 #content {
-  top: 8px;
   bottom: 8px;
   width: 100%;
   height: auto;
   float: left;
   position: relative;
   z-index: -1;
+}
+
+@media screen and (min-width: 64em) {
+  #content {
+    top: 8px;
+  }
 }
 
 .gallery-macro {
@@ -644,9 +642,14 @@ p {
   background-size: cover;
   position: absolute;
   float: left;
-  top: 8px;
   left: 0;
   z-index: -1;
+}
+
+@media screen and (min-width: 64em) {
+  .gallery-macro {
+    top: 8px;
+  }
 }
 
 .header-top {

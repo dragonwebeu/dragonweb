@@ -115,69 +115,70 @@ body {
   background-color: #eaf2f5; 
   font-family: $font-stack !important; }
 
+@include media-queries(large-up) {
+  div.page-border {
+    .border-top, .border-bottom, .border-left, .border-right {        
+      float: left;
+      position: fixed;    
+      z-index: 2000;    
+      background-color: #fff; }      
 
-div.page-border {
-  .border-top, .border-bottom, .border-left, .border-right {        
-    float: left;
-    position: fixed;    
-    z-index: 2000;    
-    background-color: #fff; }      
+      .border-top {
+        top: 0;
+        width: 100%;
+        height: 8px;}
 
-    .border-top {
-      top: 0;
-      width: 100%;
-      height: 8px;}
+      .border-bottom {
+        bottom: 0;
+        width: 100%;
+        height: 8px;}
 
-    .border-bottom {
-      bottom: 0;
-      width: 100%;
-      height: 8px;}
+      .border-left {
+        top: 0;
+        left: 0;
+        width: 8px;
+        height: 100%; }
 
-    .border-left {
-      top: 0;
-      left: 0;
-      width: 8px;
-      height: 100%; }
+      .border-right {     
+        top: 0;
+        right: 0;
+        width: 8px;
+        height: 100%; }
+  }
 
-    .border-right {     
-      top: 0;
-      right: 0;
-      width: 8px;
-      height: 100%; }
-}
+  div.border-shadow {
+    .border-top, .border-bottom, .border-left, .border-right {        
+      float: left;    
+      position: fixed;        
+      z-index: 10;
+      background-color: #fff; }      
 
-div.border-shadow {
-  .border-top, .border-bottom, .border-left, .border-right {        
-    float: left;    
-    position: fixed;        
-    z-index: 10;
-    background-color: #fff; }      
+      .border-top {
+        top: 0;
+        width: 100%;
+        height: 8px;
+        @include box-shadow(0, 1px, 6px, 3px, rgba(0, 0, 0, 0.75)); }
 
-    .border-top {
-      top: 0;
-      width: 100%;
-      height: 8px;
-      @include box-shadow(0, 1px, 6px, 3px, rgba(0, 0, 0, 0.75)); }
+      .border-bottom {
+        bottom: 0;
+        width: 100%;
+        height: 8px;
+        @include box-shadow(0, 1px, 6px, 3px, rgba(0, 0, 0, 0.75)); }
 
-    .border-bottom {
-      bottom: 0;
-      width: 100%;
-      height: 8px;
-      @include box-shadow(0, 1px, 6px, 3px, rgba(0, 0, 0, 0.75)); }
+      .border-left {
+        top: 0;
+        left: 0;
+        width: 8px;
+        height: 100%; 
+        @include box-shadow(0, 1px, 6px, 3px, rgba(0, 0, 0, 0.75)); }
 
-    .border-left {
-      top: 0;
-      left: 0;
-      width: 8px;
-      height: 100%; 
-      @include box-shadow(0, 1px, 6px, 3px, rgba(0, 0, 0, 0.75)); }
-
-    .border-right {     
-      top: 0;
-      right: 0;
-      width: 8px;
-      height: 100%; 
-      @include box-shadow(0, 1px, 6px, 3px, rgba(0, 0, 0, 0.75)); }
+      .border-right {     
+        top: 0;
+        right: 0;
+        width: 8px;
+        height: 100%; 
+        @include box-shadow(0, 1px, 6px, 3px, rgba(0, 0, 0, 0.75)); }
+  }
 }
 
 .modal {
@@ -545,7 +546,9 @@ p { font-size: 1.3rem; }
 }
 
 #content {   
-  top: 8px;
+  @include media-queries(large-up) {
+    top: 8px;
+  }	
   bottom: 8px;  
   width: 100%;
   height: auto;
@@ -560,8 +563,10 @@ p { font-size: 1.3rem; }
 	height: 100%;
 	background-size: cover;
 	position: absolute;
-	float: left;
-	top: 8px;
+  float: left;
+  @include media-queries(large-up) {
+    top: 8px;
+  }	
 	left: 0;
   z-index: -1;
 }

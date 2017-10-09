@@ -7,7 +7,7 @@ var vm = new Vue({
         
             {
             "title"    : "DragonWeb new site with no CMS. What madness is this?",      
-            "url"      : "/news/2017/05/30/dragonweb-update.html",
+            "url"      : "/news/2017/09/30/dragonweb-update.html",
             "content"  : "New site with no CMS, what madness is this?!Simple answer is Jekyll"
             } 
                 
