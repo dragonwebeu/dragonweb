@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+{% include head.html %}
+<body>	
+	<div class="modal">
+		<div class="center">
+			<h2>Loading pictures...</h2>
+			<div class="uil-ring-css" style="transform:scale(0.6);"><div></div></div>			
+		</div>		
+	</div>	
+  <div class="page-border">
+	<div class="border-top"></div>
+    <div class="border-bottom"></div>
+    <div class="border-left"></div>
+    <div class="border-right"></div>
+  </div>
+  <div class="border-shadow">
+    <div class="border-top"></div>
+    <div class="border-bottom"></div>
+    <div class="border-left"></div>
+    <div class="border-right"></div>
+  </div>	  
+<div class="wrapper">
+	<div class="blog-header-bg"></div>
+	<header>
+    <div class="row">
+      <div class="small-5 large-4 columns">
+        <div class="logo"><h1><a href="/"><img src="{{ "/img/logo.png" | prepend: site.baseurl }}" alt="DragonWeb new" height="40" width="200"></a></h1></div>
+      </div>
+      <div class="small-7 large-8 columns">
+        <div class="outer-menu ">
+          <input id="toggle" class="checkbox-toggle" type="checkbox" />
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+            <div>
+              <div>
+                {% include menu.html %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>		
+  </header>	
+	<section class="page-header page-header-text">							
+		<div class="row">
+			<h1 class="main-title large-12 columns">{{page.title}}</h1>						
+		</div>			
+	</section>		
+	<div class="content-container blog">	
+		<section class="content-detail">
+            <div class="row">                		
+                {{ content }} 
+                <span class="large-12 columns">← <a href="#" onclick="javascript:history.go(-1);return false;">Back</a></span>
+                <div class="large-12 columns blog-meta">
+                  <div class="post-info">                                        
+                          <strong>Added: </strong> <time datetime="{{ page.date | date: '%Y-%-d-%m' }}">{{ page.date | date: "%-d %B, %Y" }}</time> |
+                          <strong>Category:</strong> {{ page.categories }}        
+                        </div>                  
+                  <div class="socialmedia">                    
+                    <a target="_blank" rel="nofollow" title="Post to facebook" href="http://www.facebook.com/share.php?u={{ site.url }}{{ page.url}}"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                    <a target="_blank" rel="nofollow" title="Tweet" href="http://twitter.com/share?url={{ site.url }}{{ page.url}}"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
+                    <a target="_blank" rel="nofollow" title="Submit to Google+" href="https://plus.google.com/share?url={{ site.url }}{{ page.url}}"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+                <div class="large-12 columns">                
+                    <div id="disqus_thread"></div>
+                    <script>
+                      (function() { 
+                      var d = document, s = d.createElement('script');
+                      s.src = 'https://dragonwebeu.disqus.com/embed.js';
+                      s.setAttribute('data-timestamp', +new Date());
+                      (d.head || d.body).appendChild(s);
+                      })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>                                
+                </div>
+            </div>			
+		</section>		
+	</div>
+</div>	
+  <footer>
+			<div class="row">
+				<div class="large-12 columns">
+					{% include footer.html %}
+				</div>
+			</div> 
+		</footer>
+  {% include scripts.html %}
+</body>
+</html>

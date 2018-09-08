@@ -1,0 +1,37 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.header-title %}{{ page.header-title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.header-description %}{{ page.header-description | strip_html | strip_newlines | truncate: 170 }}{% else %}{{ site.description }}{% endif %}">    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ "/css/foundation.min.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/app.min.css" | prepend: site.baseurl }}">  
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">  
+  <link rel="icon" href="{{ "/favicon.png" | prepend: site.baseurl }}" type="image/x-icon">  
+  <script src="{{ "/js/vendor/vue.min.js" | prepend: site.baseurl }}"></script>    
+	<!--<script src="{{ "/js/vue.js" | prepend: site.baseurl }}"></script>-->
+  <meta name="google-site-verification" content="dJMxr64IsL24rlsbTGgdiMQrAHwehMFutjpS8nRP7FM" />  
+
+  {% if site.protocols.fb_image %}
+  <!-- Facebook OGP cards -->
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="{% if page.cover %}{{ page.cover | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.protocols.fb_image | prepend: site.baseurl | prepend: site.url }}{% endif %}" />
+  <meta property="og:image:type" content="{{ site.protocols.fb_image_type }}" />
+  <meta property="og:image:width" content="{{ site.protocols.fb_image_width }}" />
+  <meta property="og:image:height" content="{{ site.protocols.fb_image_height }}" />
+  {% endif %}
+
+  {% if site.protocols.twitter_image %}
+  <!-- Twitter: card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" content="{% if page.cover %}{{ page.cover | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.protocols.twitter_image | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+  <meta name="twitter:url" content="{{ site.url }}">
+  {% endif %}
+</head>

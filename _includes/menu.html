@@ -1,0 +1,13 @@
+<ul>                                      
+    {% for p in site.pages %}
+        {% if p.menu == 'main' %}
+        <li{% if p.url == page.url %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></li>
+        {% endif %}
+    {% endfor %}                    								  									
+    <li><a>Contact:</a></li>	
+    <li>										
+        <a href="skype:henry.maestu?chat"><i class="fa fa-skype" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/henry-maestu/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a href="mailto:&#100;&#114;&#97;&#103;&#111;&#110;&#119;&#101;&#98;&#101;&#117;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"><i class="fa fa-envelope" aria-hidden="true"></i></a>                  
+    </li>	                
+</ul>

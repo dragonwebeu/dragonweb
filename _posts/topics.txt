@@ -1,0 +1,108 @@
+RAils custom validations:
+errors.add(:base, I18n.t(:vola_summa_vigane)) if @amount <= 0.00 => full_message => message only 
+VS 
+errors.add(:amount, I18n.t(:vola_summa_vigane)) if @amount <= 0.00 => #{attr} #{message}
+--------------------------------------------------------------------------------------------------
+PG::Error: ERROR:  column must appear in the GROUP BY clause or be used in an aggregate function (versiooni viga?)
+--------------------------------------------------------------------------------------------------
+TÖÖTAB PRODUCATIONIS:
+  SELECT "ka".* FROM kliendi_aadress AS ka, lepingu_lisad AS ll WHERE (ll.volglane = ka.klient_id AND ll.lopetatud is null) AND (ka.maakond || ka.linn || ka.asula ~ '\d|;|,' OR lower(ka.tanav) || lower(ka.maja) || lower(ka.korter) ~ 'vald|\sv$|\svld|viimsi|mk|maakond|\smk\.?|;|,' AND lower(ka.tanav) !~ 'pst|tn|tänav|vald' OR ka.postikood ~ 'vald|\sv$|\svld|\sv\.|viimsi|\stalu|\st|\stänav|\stn|\stee|\spuiestee|\spõik|\sallee|\smaantee|\smaante|maa|\smk\.?|maa\s\d+|;|,') AND (ka.arhiveeritud IS NULL AND ll.lisatud >= date_trunc('month', (now() - interval '1 year')) AND ll.lisatud <= now() AND (ka.riik is null OR ka.riik = 'Eesti')) ORDER BY ka.id;
+AEGLASEM, TÖÖTAB MÕLEMAS:
+  SELECT DISTINCT ON (ka.id) "ka".* FROM kliendi_aadress AS ka, lepingu_lisad AS ll WHERE (ll.volglane = ka.klient_id AND ll.lopetatud is null) AND (ka.maakond || ka.linn || ka.asula ~ '\d|;|,' OR lower(ka.tanav) || lower(ka.maja) || lower(ka.korter) ~ 'vald|\sv$|\svld|viimsi|mk|maakond|\smk\.?|;|,' AND lower(ka.tanav) !~ 'pst|tn|tänav|vald' OR ka.postikood ~ 'vald|\sv$|\svld|\sv\.|viimsi|\stalu|\st|\stänav|\stn|\stee|\spuiestee|\spõik|\sallee|\smaantee|\smaante|maa|\smk\.?|maa\s\d+|;|,') AND (ka.arhiveeritud IS NULL AND ll.lisatud >= date_trunc('month', (now() - interval '1 year')) AND ll.lisatud <= now() AND (ka.riik is null OR ka.riik = 'Eesti'));
+
+---------------------------------------------------
+RUBYMINE error:
+java.util.zip.ZipException: incorrect header check
+---------------------------------------------------
+----------------------------------------------------
+Super faster way to create database from csv fail
+----------------------------------------------------
+# Kõige kiirem viist csv fail to database importida
+@db_connection.exec("
+  CREATE TABLE sihtnumbrid (
+    ADR_ID varchar(255),
+    SIHTNUMBER varchar(255),
+    LAHIAADRESS varchar(255),
+    TAISAADRESS varchar(255)
+  );
+")
+
+@db_connection.exec("COPY sihtnumbrid(ADR_ID, SIHTNUMBER, LAHIAADRESS, TAISAADRESS) FROM '#{file}' WITH DELIMITER ';' CSV HEADER")
+
+---------------------------------------------------------------
+MAIL WITH attachment
+---------------------------------------------
+saved_file = Rails.root.join('db', 'log', 'vead_kliendi_aadress_tabelis.csv')
+mailer = ActionMailer::Base.mail(from: 'no-replay@julianus.ee', to: 'test@test.ee', subject: 'Errors in database', body: '', content_type: 'multipart/mixed')
+mailer.attachments['vead_kliendi_aadress_tabelis.csv'] = { mime_type: 'text/csv', content: File.read(saved_file) }
+mailer.deliver
+------------
+# * <tt>parts_order:  [ "text/plain", "text/enriched", "text/html" ]</tt>
+
+-----------
+VBox resize
+-----------
+----------------------------
+SQL GET last YEAR FROM table
+----------------------------
+ll.lisatud >= date_trunc('month', (now() - interval '1 year')) AND ll.lisatud <= now()
+
+----------------------------
+SQL check for empty and null
+----------------------------
+
+SELECT * FROM users WHERE coalesce(email, '') = ''
+
+----------------------------
+kill_postgres_connections
+----------------------------
+# lib/tasks/kill_postgres_connections.rake
+task :kill_postgres_connections => :environment do
+  db_name = "#{File.basename(Rails.root)}_#{Rails.env}"
+  sh = <<EOF
+ps xa \
+  | grep postgres: \
+  | grep #{db_name} \
+  | grep -v grep \
+  | awk '{print $1}' \
+  | xargs kill
+EOF
+  puts `#{sh}`
+end
+
+task "db:drop" => :kill_postgres_connections
+
+-------------------------
+TWO DATABASE CONNECTIONS
+------------------------- 
+class Debitors < ActiveRecord::Base
+
+  self.abstract_class = true
+  establish_connection(:ice_production)
+  self.table_name = 'debitors'
+
+end
+
+Create table first then
+pg_restore -h localhost -U postgres -p 5432 --dbname database_address_fix_development -t valikud --section=pre-data --superuser=aurelius < /home/henry/valikud.backup
+
+pg_restore -h localhost -U postgres -p 5432 --dbname database_address_fix_development -t lepingu_lisad --section=data < /home/henry/lepingu_lisad.backup
+
+--------------
+PSQL SPLIT to
+--------------
+SELECT regexp_split_to_array(taisaadress, ',') FROM eesti_aadressid WHERE regexp_split_to_array
+
+SELECT split_part(taisaadress, ',', 1) AS maakond, split_part(taisaadress, ',', 2) AS linn_vald, split_part(taisaadress, ',', 3) AS asula, split_part(taisaadress, ',', 4) AS aadress FROM eesti_aadressid
+--------------------------
+SPLIT_PART WHERE CONDITION
+--------------------------
+WITH aadressid AS (SELECT split_part(taisaadress, ',', 1) AS maakond, split_part(taisaadress, ',', 2) AS linn_vald, split_part(taisaadress, ',', 3) AS asula FROM eesti_aadressid)
+SELECT DISTINCT ON (linn_vald) * FROM aadressid WHERE linn_vald LIKE '% vald%' AND asula LIKE '% linn%'
+
+------------------------
+RUBY .gsub single quotes
+------------------------
+As someone who used to write most my code as single quotes, I faced this bug/error.
+"EXAMPLE 1235".gsub('\s1235', '') => "EXAMPLE 1235"
+"EXAMPLE 1235".gsub("\s1235", "") => "EXAMPLE"

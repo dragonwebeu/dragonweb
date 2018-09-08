@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+{% include head.html %}
+<body>
+  <div class="modal">
+		<div class="center">
+			<h2>Loading pictures...</h2>
+			<div class="uil-ring-css" style="transform:scale(0.6);"><div></div></div>			
+		</div>		
+	</div>	
+  <div class="page-border">
+	<div class="border-top"></div>
+    <div class="border-bottom"></div>
+    <div class="border-left"></div>
+    <div class="border-right"></div>
+  </div>
+  <div class="border-shadow">
+    <div class="border-top"></div>
+    <div class="border-bottom"></div>
+    <div class="border-left"></div>
+    <div class="border-right"></div>
+  </div>  
+  <div class="bg-img"></div>
+  <header>
+    <div class="row">
+      <div class="small-5 large-4 columns">        
+        <div class="logo"><h1><a href="/"><img src="{{ "/img/logo.png" | prepend: site.baseurl }}" alt="DragonWeb new" height="40" width="200"></a></h1></div>        
+      </div>
+      <div class="small-7 large-8 columns">
+        <div class="outer-menu ">
+          <input id="toggle" class="checkbox-toggle" type="checkbox" />
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+            <div>
+              <div>
+                {% include menu.html %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="page-header page-header-text-home">		
+    <div class="home-page">
+      <div class="row"> 
+        <h1 class="main-title large-12 columns">Web Design - Photography - Other projects</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">					
+        <p>Hello there, my name is Henry Mäestu, I’m junior rails developer from Estonia. I penetration test websites security as a hobby. I try to write more about that on my blog and other useful topics.</p>
+        <!--<p class="show-for-large"><small>NB! Currently looking for a job as web designer/developer, web administrator or QA Tester intern.  <a href="mailto:&#100;&#114;&#97;&#103;&#111;&#110;&#119;&#101;&#98;&#101;&#117;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">contact here</a>!</small></p> -->
+      </div>
+    </div>
+  </section>  
+  <footer class="footer-absolute show-for-large">
+    <div class="row">
+      <div class="large-12 columns">
+        {% include footer.html %}	
+      </div>
+    </div> 
+  </footer>
+  {% include scripts.html %}
+</body>
+</html>

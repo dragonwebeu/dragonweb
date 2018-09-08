@@ -1,0 +1,6 @@
+---
+layout: detail
+title:  
+date:   
+categories: 
+---
