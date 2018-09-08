@@ -5,6 +5,8 @@ date:   2018-07-21 16:20:00 +0300
 categories: web-development
 excerpt_separator: <!--more-->
 ---
+This is how make own custom rails validation with traslation
+<!--more-->
 
 {% highlight rails %}
     errors.add(:base, I18n.t(:vola_summa_vigane)) if @amount <= 0.00

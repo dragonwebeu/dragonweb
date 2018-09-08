@@ -8,10 +8,8 @@ excerpt_separator: <!--more-->
 ---
 
 I have been using Node.js to scrape articles/posts from forums or Wikipedia and saved them into .txt file. Then I convert text to .mp3 with text to speech application like [balabonka](http://www.cross-plus-a.com/balabolka.htm), which is free and best one out there. For better voices than Microsoft, I use [Ivona Amy speech synthesizer](https://www.ivona.com/).
-
-You can create an app. that downloads pictures from [https://unsplash.com/](https://unsplash.com/) automatically all in one place etc.
-
 <!--more-->
+You can create an app. that downloads pictures from [https://unsplash.com/](https://unsplash.com/) automatically all in one place etc.
 
 ### Install latest node.js from here
 [https://nodejs.org/en/](https://nodejs.org/en/)

@@ -6,9 +6,7 @@ categories: web-development
 excerpt_separator: <!--more-->
 ---
 Two months back I had a problem at work with one PostgreSQL queries. Whenever I was using was using GROUP BY I got "column must appear in the GROUP BY clause or be used in an aggregate function"
-
 <!--more-->
-
 The simple version of a problematic query:
 {% highlight postgresql %}
     SELECT "as".* FROM address AS as, customer AS c WHERE as.customer_id = c.id GROUP BY as.id;

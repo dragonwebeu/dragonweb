@@ -9,9 +9,7 @@ excerpt_separator: <!--more-->
 Many of you who read this and visit my site are from CMS Made Simple website thanks to the template I made a long time ago.
 
 I strongly believe many of you and others do not need any Content management system (CMS), small company websites, blogs should use Jekyll or something similar for cheaper costs and for security. Content management system like Wordpress etc. are hackers paradise! Customer or user usually does not know how to update a website or lack money and skill to so after setting up CMS.
-
 <!--more-->
-
 I currently use no CMS and plan to not do it in the future, I can host my site for FREE in GitHub or in Bitbucket and pay for my domain only!
 
 A website with a blog, search functionality and no CMS, what madness is this?!

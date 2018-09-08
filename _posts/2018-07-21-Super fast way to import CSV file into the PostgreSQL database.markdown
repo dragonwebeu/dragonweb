@@ -7,9 +7,8 @@ excerpt_separator: <!--more-->
 ---
 I usually used  CSV gem to import each row to the database but it long and a really stupid way to do it. 
 After some research, I found that PostgreSQL has /copy command which is super fast and easy to use. 
-
-I had CSV file with a little bit more than 1.2 million rows and importing that with copy command took 10-15 seconds max.
 <!--more-->
+I had CSV file with a little bit more than 1.2 million rows and importing that with copy command took 10-15 seconds max.
 
 {% highlight ruby %}
 @db_connection.exec("
