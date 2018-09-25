@@ -1,7 +1,5 @@
 .sass-cache
 .jekyll-metadata
 vendor/*
-vendor
-vendor/bundle
 _todo/blog_posts.todo
 _site/blog_posts.todo
