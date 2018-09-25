@@ -24,7 +24,7 @@ markdown: kramdown
 # theme: dragonweb
 
 gems:
-  - jekyll-feed  
+  #- jekyll-feed  
   - jekyll-sitemap
 exclude:
   - vendor
