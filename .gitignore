@@ -3,4 +3,5 @@
 vendor/*
 vendor
 vendor/bundle
-blog_posts.todo
+_todo/blog_posts.todo
+_site/blog_posts.todo
