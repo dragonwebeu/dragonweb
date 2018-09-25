@@ -12,6 +12,12 @@ var vm = new Vue({
             } ,
         
             {
+            "title"    : "Super fast way to import CSV file into the PostgreSQL database",      
+            "url"      : "/web-development/2018/07/21/Super-fast-way-to-import-CSV-file-into-the-PostgreSQL-database.html",
+            "content"  : "I usually used  CSV gem to import each row to the database but it long and a really stupid way to do it. After some research, I found that PostgreSQL has /copy command which is super fast and easy to use."
+            } ,
+        
+            {
             "title"    : "How to solve column must appear in the GROUP BY clause or be used in an aggregate function",      
             "url"      : "/web-development/2018/07/21/GROUP-BY-clause-or-be-used-in-an-aggregate-function.html",
             "content"  : "Two months back I had a problem at work with one PostgreSQL queries. Whenever I was using was using GROUP BY I got “column must appear in the GROUP BY clause or be used in an aggregate function”"
