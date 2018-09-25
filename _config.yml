@@ -27,5 +27,6 @@ gems:
   - jekyll-feed  
   - jekyll-sitemap
 exclude:
+  - vendor
   - Gemfile
   - Gemfile.lock
