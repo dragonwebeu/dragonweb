@@ -6,39 +6,99 @@ var vm = new Vue({
     articles: [
         
             {
-            "title"    : "TESTING",      
-            "url"      : "/web-development/2018/07/21/Super-fast-way-to-import-CSV-file-into-the-PostgreSQL-database.html",
-            "content"  : "I usually used  CSV gem to import each row to the database but it long and a really stupid way to do it. After some research, I found that PostgreSQL has /copy command which is super fast and easy to use."
+            "title"    : "Linux disable ping to machine",      
+            "url"      : "/linux/2024/05/02/Linux+disable+ping+to+machine.html",
+            "content"  : ""
+            } ,
+        
+            {
+            "title"    : "OpenSSL debug tips after server change troubleshooting certs.",      
+            "url"      : "/linux/2024/04/29/OpenSSL+debug+tips+after+server+change+troubleshooting+certs..html",
+            "content"  : ""
+            } ,
+        
+            {
+            "title"    : "Iptabel block IP",      
+            "url"      : "/linux/2024/04/10/Iptabel+block+IP.html",
+            "content"  : ""
+            } ,
+        
+            {
+            "title"    : "Linux get lines from file",      
+            "url"      : "/linux/2024/04/08/Linux+get+lines+from+file.html",
+            "content"  : ""
+            } ,
+        
+            {
+            "title"    : "Run postgres database in Docker",      
+            "url"      : "/docker/2024/02/02/Run+postgres+database+in+Docker+%28copy%29.html",
+            "content"  : ""
+            } ,
+        
+            {
+            "title"    : "Run postgres database in Docker",      
+            "url"      : "/docker/2024/02/02/Run+postgres+database+in+Docker+%28another+copy%29.html",
+            "content"  : ""
+            } ,
+        
+            {
+            "title"    : "Run postgres database in Docker",      
+            "url"      : "/docker/2024/02/02/Run+postgres+database+in+Docker+%288th+copy%29.html",
+            "content"  : ""
+            } ,
+        
+            {
+            "title"    : "Run postgres database in Docker",      
+            "url"      : "/docker/2024/02/02/Run+postgres+database+in+Docker.html",
+            "content"  : ""
+            } ,
+        
+            {
+            "title"    : "Linux command to inspect TXT records of a domain",      
+            "url"      : "/linux/2024/02/02/Linux+command+to+inspect+TXT+records+of+a+domain.html",
+            "content"  : ""
+            } ,
+        
+            {
+            "title"    : "Run postgres database in Docker",      
+            "url"      : "/rails/2024/01/06/Rails+ActiveRecord%3A%3ABatches+aka+find+in+batches.html",
+            "content"  : ""
+            } ,
+        
+            {
+            "title"    : "How to add a time taken to picture in Linux",      
+            "url"      : "/linux/2023/11/03/How+to+add+a+time+taken+to+picture+in+Linux.html",
+            "content"  : ""
             } ,
         
             {
             "title"    : "Super fast way to import CSV file into the PostgreSQL database",      
-            "url"      : "/web-development/2018/07/21/Super-fast-way-to-import-CSV-file-into-the-PostgreSQL-database.html",
-            "content"  : "I usually used  CSV gem to import each row to the database but it long and a really stupid way to do it. After some research, I found that PostgreSQL has /copy command which is super fast and easy to use."
+            "url"      : "/web-development/2018/07/21/Super+fast+way+to+import+CSV+file+into+the+PostgreSQL+database.html",
+            "content"  : ""
             } ,
         
             {
             "title"    : "How to solve column must appear in the GROUP BY clause or be used in an aggregate function",      
-            "url"      : "/web-development/2018/07/21/GROUP-BY-clause-or-be-used-in-an-aggregate-function.html",
-            "content"  : "Two months back I had a problem at work with one PostgreSQL queries. Whenever I was using was using GROUP BY I got “column must appear in the GROUP BY clause or be used in an aggregate function”"
+            "url"      : "/web-development/2018/07/21/GROUP+BY+clause+or+be+used+in+an+aggregate+function.html",
+            "content"  : ""
             } ,
         
             {
             "title"    : "Rails custom validation",      
             "url"      : "/web-development/2018/07/21/rails-custom-validation.html",
-            "content"  : "This is how make own custom rails validation with traslation"
+            "content"  : ""
             } ,
         
             {
             "title"    : "How to create simple web scraper in node.js",      
             "url"      : "/tutorials/2017/11/07/web-scraper.html",
-            "content"  : "I have been using Node.js to scrape articles/posts from forums or Wikipedia and saved them into .txt file. Then I convert text to .mp3 with text to speech application like balabonka, which is free and best one out there. For better voices than Microsoft, I use Ivona Amy speech synthesizer."
+            "content"  : ""
             } ,
         
             {
             "title"    : "DragonWeb new site with no CMS. What madness is this?",      
             "url"      : "/news/2017/05/30/dragonweb-update.html",
-            "content"  : "Many of you who read this and visit my site are from CMS Made Simple website thanks to the template I made a long time ago.I strongly believe many of you and others do not need any Content management system (CMS), small company websites, blogs should use Jekyll or something similar for cheaper costs and for security. Content management system like Wordpress etc. are hackers paradise! Customer or user usually does not know how to update a website or lack money and skill to so after setting up CMS."
+            "content"  : ""
             } 
                 
     ],        
