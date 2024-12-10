@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/foundation.min.css">
   <link rel="stylesheet" href="/css/app.min.css">  
-  <link rel="canonical" href="http://www.dragonweb.eu/web-development/2018/07/21/rails-custom-validation.html">  
+  <link rel="canonical" href="http://localhost:4000/web-development/2018/07/21/rails-custom-validation.html">  
   <link rel="icon" href="/favicon.png" type="image/x-icon">  
   <script src="/js/vendor/vue.min.js"></script>    
 	<!--<script src="/js/vue.js"></script>-->
@@ -55,25 +55,7 @@
                 <ul>                                      
     
         
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/index.html">Home</a></li>
         
     
         
@@ -81,7 +63,37 @@
         
     
         
-        <li><a href="/index.html">Home</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
         
                         								  									
     <li><a>Contact:</a></li>	
@@ -109,10 +121,13 @@
                 <p>This is how make own custom rails validation with traslation
 <!--more--></p>
 
-<p>Liquid error: internal
-On Error display’s full_message =&gt; message only 
-Liquid error: internal
-On Error display’s  “attribute - message”</p>
+<figure class="highlight"><pre><code class="language-rails" data-lang="rails">    errors.add(:base, I18n.t(:vola_summa_vigane)) if @amount &lt;= 0.00</code></pre></figure>
+
+<p>On Error display’s full_message =&gt; message only</p>
+
+<figure class="highlight"><pre><code class="language-rails" data-lang="rails">    errors.add(:amount, I18n.t(:vola_summa_vigane)) if @amount &lt;= 0.00 =&gt;</code></pre></figure>
+
+<p>On Error display’s  “attribute - message”</p>
 
                 <div class="large-12 columns">
                     <amp-auto-ads type="adsense" data-ad-client="ca-pub-0850872884539497">
@@ -125,9 +140,9 @@ On Error display’s  “attribute - message”</p>
                           <strong>Category:</strong> web-development        
                         </div>                  
                   <div class="socialmedia">                    
-                    <a target="_blank" rel="nofollow" title="Post to facebook" href="http://www.facebook.com/share.php?u=http://www.dragonweb.eu/web-development/2018/07/21/rails-custom-validation.html"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
-                    <a target="_blank" rel="nofollow" title="Tweet" href="http://twitter.com/share?url=http://www.dragonweb.eu/web-development/2018/07/21/rails-custom-validation.html"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
-                    <a target="_blank" rel="nofollow" title="Submit to Google+" href="https://plus.google.com/share?url=http://www.dragonweb.eu/web-development/2018/07/21/rails-custom-validation.html"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a target="_blank" rel="nofollow" title="Post to facebook" href="http://www.facebook.com/share.php?u=http://localhost:4000/web-development/2018/07/21/rails-custom-validation.html"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                    <a target="_blank" rel="nofollow" title="Tweet" href="http://twitter.com/share?url=http://localhost:4000/web-development/2018/07/21/rails-custom-validation.html"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
+                    <a target="_blank" rel="nofollow" title="Submit to Google+" href="https://plus.google.com/share?url=http://localhost:4000/web-development/2018/07/21/rails-custom-validation.html"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                   </div>
                 </div>
                 <div class="large-12 columns">                

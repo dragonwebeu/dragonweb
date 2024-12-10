@@ -11,7 +11,7 @@ Docker and docker-compose update
 
 ## Upgrade Docker
 If you using Debian stretch
-```
+```bash
 sudo nano /etc/apt/sources.list
 # Add Docker to source.list
 deb [arch=amd64] https://download.docker.com/linux/debian buster stable
@@ -31,7 +31,7 @@ Get lates version from https://docs.docker.com/compose/install/linux/#install-th
 sudo mkdir -p /usr/local/lib/docker/cli-plugin
 sudo curl -SL https://github.com/docker/compose/releases/download/v2.24.2/docker-compose-linux-x86_64 -o /usr/local/lib/docker/cli-plugin/docker-compose
 sudo chmod +x /usr/local/lib/docker/cli-plugin/docker-compose
-``
+```
 
 Verify if it's installed correctly
 
@@ -39,4 +39,4 @@ Verify if it's installed correctly
 docker compose version
 ```
 
-PS! If your old system was `docker-compose X` (up, down, stop, --version) then remember 2.x is `docker compose X`
+PS! If your old system was **docker-compose X** (up, down, stop, --version) then remember 2.x is **docker compose X**
