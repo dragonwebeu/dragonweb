@@ -26,24 +26,6 @@
   
     {
       "title"    : "Run postgres database in Docker",      
-      "url"      : "/docker/2024/02/02/Run+postgres+database+in+Docker+%28copy%29.html",
-      "content"  : ""
-    } ,
-  
-    {
-      "title"    : "Run postgres database in Docker",      
-      "url"      : "/docker/2024/02/02/Run+postgres+database+in+Docker+%28another+copy%29.html",
-      "content"  : ""
-    } ,
-  
-    {
-      "title"    : "Run postgres database in Docker",      
-      "url"      : "/docker/2024/02/02/Run+postgres+database+in+Docker+%288th+copy%29.html",
-      "content"  : ""
-    } ,
-  
-    {
-      "title"    : "Run postgres database in Docker",      
       "url"      : "/docker/2024/02/02/Run+postgres+database+in+Docker.html",
       "content"  : ""
     } ,
@@ -51,6 +33,24 @@
     {
       "title"    : "Linux command to inspect TXT records of a domain",      
       "url"      : "/linux/2024/02/02/Linux+command+to+inspect+TXT+records+of+a+domain.html",
+      "content"  : ""
+    } ,
+  
+    {
+      "title"    : "Docker and docker-compose update",      
+      "url"      : "/linux/2024/01/29/Docker+and+docker-compose+update.html",
+      "content"  : ""
+    } ,
+  
+    {
+      "title"    : "debian strech source fix 2023",      
+      "url"      : "/linux/2024/01/25/debian+strech+source+fix+2023.html",
+      "content"  : ""
+    } ,
+  
+    {
+      "title"    : "autovacuum and vacuum check in postgres",      
+      "url"      : "/postgres/2024/01/14/autovacuum+and+vacuum+check+in+postgres.html",
       "content"  : ""
     } ,
   
@@ -173,6 +173,18 @@
   //         } ,
   //   
   //     {
+  //         "title"    : "Docker and docker-compose update",      
+  //         "url"      : "/linux/2024/01/29/Docker+and+docker-compose+update.html",
+  //         "content"  : ""
+  //         } ,
+  //   
+  //     {
+  //         "title"    : "debian strech source fix 2023",      
+  //         "url"      : "/linux/2024/01/25/debian+strech+source+fix+2023.html",
+  //         "content"  : ""
+  //         } ,
+  //   
+  //     {
   //         "title"    : "How to add a time taken to picture in Linux",      
   //         "url"      : "/linux/2023/11/03/How+to+add+a+time+taken+to+picture+in+Linux.html",
   //         "content"  : ""
@@ -191,22 +203,13 @@
   //         
   //   
   //     {
-  //         "title"    : "Run postgres database in Docker",      
-  //         "url"      : "/docker/2024/02/02/Run+postgres+database+in+Docker+%28copy%29.html",
+  //         "title"    : "autovacuum and vacuum check in postgres",      
+  //         "url"      : "/postgres/2024/01/14/autovacuum+and+vacuum+check+in+postgres.html",
   //         "content"  : ""
-  //         } ,
-  //   
-  //     {
-  //         "title"    : "Run postgres database in Docker",      
-  //         "url"      : "/docker/2024/02/02/Run+postgres+database+in+Docker+%28another+copy%29.html",
-  //         "content"  : ""
-  //         } ,
-  //   
-  //     {
-  //         "title"    : "Run postgres database in Docker",      
-  //         "url"      : "/docker/2024/02/02/Run+postgres+database+in+Docker+%288th+copy%29.html",
-  //         "content"  : ""
-  //         } ,
+  //         } 
+  //     
+  // 
+  //         
   //   
   //     {
   //         "title"    : "Run postgres database in Docker",      

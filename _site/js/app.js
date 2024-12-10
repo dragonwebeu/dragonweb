@@ -31,24 +31,6 @@ var vm = new Vue({
         
             {
             "title"    : "Run postgres database in Docker",      
-            "url"      : "/docker/2024/02/02/Run+postgres+database+in+Docker+%28copy%29.html",
-            "content"  : ""
-            } ,
-        
-            {
-            "title"    : "Run postgres database in Docker",      
-            "url"      : "/docker/2024/02/02/Run+postgres+database+in+Docker+%28another+copy%29.html",
-            "content"  : ""
-            } ,
-        
-            {
-            "title"    : "Run postgres database in Docker",      
-            "url"      : "/docker/2024/02/02/Run+postgres+database+in+Docker+%288th+copy%29.html",
-            "content"  : ""
-            } ,
-        
-            {
-            "title"    : "Run postgres database in Docker",      
             "url"      : "/docker/2024/02/02/Run+postgres+database+in+Docker.html",
             "content"  : ""
             } ,
@@ -56,6 +38,24 @@ var vm = new Vue({
             {
             "title"    : "Linux command to inspect TXT records of a domain",      
             "url"      : "/linux/2024/02/02/Linux+command+to+inspect+TXT+records+of+a+domain.html",
+            "content"  : ""
+            } ,
+        
+            {
+            "title"    : "Docker and docker-compose update",      
+            "url"      : "/linux/2024/01/29/Docker+and+docker-compose+update.html",
+            "content"  : ""
+            } ,
+        
+            {
+            "title"    : "debian strech source fix 2023",      
+            "url"      : "/linux/2024/01/25/debian+strech+source+fix+2023.html",
+            "content"  : ""
+            } ,
+        
+            {
+            "title"    : "autovacuum and vacuum check in postgres",      
+            "url"      : "/postgres/2024/01/14/autovacuum+and+vacuum+check+in+postgres.html",
             "content"  : ""
             } ,
         
