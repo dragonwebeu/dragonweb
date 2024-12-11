@@ -42,6 +42,18 @@ var vm = new Vue({
             } ,
         
             {
+            "title"    : "Rails Tabeless model",      
+            "url"      : "/rails/2024/02/29/Rails-Tabeless-model.html",
+            "content"  : "Rails Tabeless model"
+            } ,
+        
+            {
+            "title"    : "Postgres find multiple connections by username",      
+            "url"      : "/linux/2024/02/28/Postgres-find-multiple-connections-by-username.html",
+            "content"  : "Postgres find multiple connections by username"
+            } ,
+        
+            {
             "title"    : "Linux install dig",      
             "url"      : "/linux/2024/02/28/Linux-install-dig.html",
             "content"  : "Linux install DIG"
@@ -54,6 +66,18 @@ var vm = new Vue({
             } ,
         
             {
+            "title"    : "Ruby read hexidecimal",      
+            "url"      : "/linux/2024/02/18/Ruby-read-hexidecimal.html",
+            "content"  : "Ruby read hexidecimal"
+            } ,
+        
+            {
+            "title"    : "postgres concat two databse columns and search from there",      
+            "url"      : "/postgres/2024/02/16/postgres-concat-two-databse-columns-and-search-from-there.html",
+            "content"  : "postgres concat two databse columns and search from there"
+            } ,
+        
+            {
             "title"    : "git submodule",      
             "url"      : "/web-development/2024/02/07/git-submodule.html",
             "content"  : "git config submodule.recurse true"
@@ -63,6 +87,12 @@ var vm = new Vue({
             "title"    : "GNU parallel",      
             "url"      : "/linux/2024/02/07/GNU-parallel.html",
             "content"  : "GNU parallel"
+            } ,
+        
+            {
+            "title"    : "Postgres get row below",      
+            "url"      : "/postgres/2024/02/06/Postgres-get-row-below.html",
+            "content"  : "Postgres get row below"
             } ,
         
             {
@@ -81,6 +111,12 @@ var vm = new Vue({
             "title"    : "Run postgres database in Docker",      
             "url"      : "/docker/2024/02/02/Run-postgres-database-in-Docker.html",
             "content"  : "Here is command how to create docker postgres container with custom port"
+            } ,
+        
+            {
+            "title"    : "Nginx with customer header with underscore",      
+            "url"      : "/linux/2024/02/02/Nginx-with-customer-header-with-underscore.html",
+            "content"  : "By default CGI command are not allowed."
             } ,
         
             {
@@ -123,6 +159,24 @@ var vm = new Vue({
             "title"    : "Run postgres database in Docker",      
             "url"      : "/rails/2024/01/06/Rails-ActiveRecord-Batches-aka-find-in-batches.html",
             "content"  : "Rails ActiveRecord::Batches aka find in batches"
+            } ,
+        
+            {
+            "title"    : "Start puma with /etc/init.d/",      
+            "url"      : "/linux/2023/12/12/Start-puma-with-etc-initd.html",
+            "content"  : "Start puma with /etc/init.d/ this is for staging"
+            } ,
+        
+            {
+            "title"    : "Byte hacks",      
+            "url"      : "/rails/2023/12/11/Byte-hacks-in-Ruby.html",
+            "content"  : "Byte hacks in Ruby"
+            } ,
+        
+            {
+            "title"    : "Ruby to bytecode",      
+            "url"      : "/ruby/2023/11/26/Ruby-to-bytecode.html",
+            "content"  : "byte_code = RubyVM::InstructionSequence.compile_file(&#39;/home/henry/somefile.rb&#39;)File.binwrite(&#39;/home/henry/bytecode&#39;, byte_code.to_binary)"
             } ,
         
             {
